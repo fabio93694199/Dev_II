@@ -30,7 +30,7 @@ public class Principal extends AppCompatActivity {
         setContentView(R.layout.activity_principal);
         // GERADO AUTOMATICAMENTE PARA IMPLEMENTAR A API QUE DARÁ SUPORTE AO LAYOUT //
         // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        // See https://g.co/AppIndexing/AndroidStudio para mais informaçoes.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
         /////////////////////////////////// PAINEL ///////////////////////////////////
         painel = (Toolbar) findViewById(R.id.IDpainel);
