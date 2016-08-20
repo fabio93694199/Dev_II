@@ -11,6 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+
         >
         <include
             android:layout_height="wrap_content"
@@ -26,6 +28,7 @@
             app:tabMode="fixed"
             app:tabGravity="fill"
             app:tabTextAppearance="@style/MeuEstiloDeAba"
+            app:tabBackground="@color/common_signin_btn_light_text_default"
             ></android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>
     

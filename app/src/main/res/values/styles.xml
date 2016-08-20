@@ -3,12 +3,14 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/common_action_bar_splitter</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
     <style name="MeuEstiloDeAba" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">30dp</item>
     </style>
 </resources>

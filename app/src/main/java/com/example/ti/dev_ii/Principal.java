@@ -6,6 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Window;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -27,6 +28,8 @@ public class Principal extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //remove título desta Activity
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_principal);
         // GERADO AUTOMATICAMENTE PARA IMPLEMENTAR A API QUE DARÁ SUPORTE AO LAYOUT //
         // ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -44,6 +47,8 @@ public class Principal extends AppCompatActivity {
         adaptadorDePaginas.addPaginas(new Pagina1(),"Primeira");
         adaptadorDePaginas.addPaginas(new Pagina2(),"Segunda");
         adaptadorDePaginas.addPaginas(new Pagina3(),"Terceira");
+        //adaptadorDePaginas.addPaginas(new ItemFragment(),"test");
+        //adaptadorDePaginas.addPaginas(new Teste(),"test");
         paginaDasAbas.setAdapter(adaptadorDePaginas);
         abas.setupWithViewPager(paginaDasAbas);
         //////////////////////////////////////////////////////////////////////////////
